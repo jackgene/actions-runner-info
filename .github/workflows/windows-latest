@@ -1,0 +1,11 @@
+name: windows-latest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Details:
+    runs-on: windows-latest
+
+    steps:
+      - run: WMIC CPU Get /Format:List
